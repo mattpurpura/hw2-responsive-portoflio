@@ -40,11 +40,15 @@ body{
 }
 
 .tab{
-    float: right;
     margin-top: 40px;
     color: #777777;
     text-decoration: none;
     font-size: 22px;
+}
+
+.navtabs{
+    float: right;
+    margin-top: 40px;
 }
 
 .tab:hover{
@@ -160,6 +164,18 @@ footer{
     z-index: 2;
 }
 
+@media screen and (max-width: 1350px){
+    header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .mainContent{
+        width: 60%;
+        margin-left: 40px;
+    }
+}
+
 @media screen and (max-width: 980px){
     header{
         padding-left: 40px;
@@ -192,7 +208,8 @@ footer{
     }
     
     .name{
-        width: 100%
+        width: 100%;
+        float: none;
     }
 
     .tab{
@@ -201,6 +218,11 @@ footer{
     }
 
     .navtabs{
-        margin: 0 auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none;
+        position: static;
+        margin-top: 0;
     }
 }

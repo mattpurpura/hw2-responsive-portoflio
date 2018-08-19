@@ -224,5 +224,7 @@ footer{
         float: none;
         position: static;
         margin-top: 0;
+        display: flex;
+        justify-content: center;
     }
 }
